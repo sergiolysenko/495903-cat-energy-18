@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Sergey Lysenko](https://up.htmlacademy.ru/adaptive/18/user/495903).
-* Наставник: `Неизвестно`.
+* Наставник: Дмитрий (sench) Железцов.
 
 ---
 
