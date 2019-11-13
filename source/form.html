@@ -29,6 +29,95 @@
       </div>
     </nav>
   </header>
+  <main class="form-main">
+    <form class="form-main__section" action="https://echo.htmlacademy.ru" method="post">
+      <h1 class="form-main__title">Подбор программы</h1>
+      <p class="form-main__instruction">Заполните анкету и мы подберем
+      программу питания для вашего кота</p>
+      <fieldset class="form-main__field">
+        <legend class="visually-hidden">Данные кота</legend>
+        <p class="form-main__label-input">
+          <label class="form-main__label">Имя:*
+            <input class="form-main__input form-main__input--cat-name" type="text" name="name" placeholder="Барсик">
+          </label>
+        </p>
+        <p class="form-main__label-input">
+          <label class="form-main__label">Вес (Кг):*
+            <input class="form-main__input form-main__input--weight" type="number" name="weight" placeholder="7">
+          </label>
+        </p>
+        <p class="form-main__label-input">
+          <label class="form-main__label">Возраст (Лет):*
+            <input class="form-main__input form-main__input--age" type="number" name="age" placeholder="7">
+          </label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend class="visually-hidden">Программа похудения</legend>
+        <ul class="form-main__radio-list">
+          <li class="form-main__radio-item">
+            <label class="form-main__label">
+              <input class="form-main__radio" type="radio" name="program" checked>Похудение
+            </label>
+          </li>
+          <li class="form-main__radio-item">
+            <label class="form-main__label">
+              <input class="form-main__radio" type="radio" name="program">Набор массы
+            </label>
+          </li>
+          <li class="form-main__radio-item">
+            <label class="form-main__label">
+              <input class="form-main__radio" type="radio" name="program">Не знаю (нужен ваш совет)
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form-main__field">
+        <legend class="form-main__section-title">Контактные данные (владельца кота)</legend>
+        <p class="form-main__label-input">
+          <label class="form-main__label">E-mail:*
+            <input class="form-main__input form-main__input--email" type="email" name="email" placeholder="kuklachev@gmail.com">
+          </label>
+        </p>
+        <p class="form-main__label-input">
+          <label class="form-main__label">Телефон:*
+            <input class="form-main__input form-main__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+          </label>
+        </p>
+      </fieldset>
+      <fieldset class="form-main__field">
+        <legend class="form-main__section-title">Комментарий</legend>
+        <textarea class="form-main__text-area" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </fieldset>
+      <fieldset class="form-main__field">
+        <legend class="form-main__section-title">Дополнительно</legend>
+        <ul class="form-main__checkbox-list">
+          <li class="form-main__checkbox-item">
+            <label class="form-main__label">
+              <input class="form-main__checkbox" type="checkbox" name="sugar" checked>Сахарозаменитель
+            </label>
+          </li>
+          <li class="form-main__checkbox-item">
+            <label class="form-main__label">
+              <input class="form-main__checkbox" type="checkbox" name="water">Питьевая вода
+            </label>
+          </li>
+          <li class="form-main__checkbox-item">
+            <label class="form-main__label">
+              <input class="form-main__checkbox" type="checkbox" name="milk">Молоко
+            </label>
+          </li>
+          <li class="form-main__checkbox-item">
+            <label class="form-main__label">
+              <input class="form-main__checkbox" type="checkbox" name="vitamins">Витамины
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="form-main__button green-button">Отправить заявку</button>
+      <small class="form-main__note">* — Обязательные поля</small>
+    </form>
+  </main>
   <footer class="page-footer">
     <div class="page-footer__contacts contacts">
       <strong class="contacts__welcome-cry">Приглашаем к сотрудничеству дилеров!</strong>
