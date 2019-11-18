@@ -1,0 +1,15 @@
+.product-item {
+  list-style: none;
+}
+.product-item__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+.product-item__info-list {
+  @include font-arial;
+  font-size: 12px;
+  line-height: 16px;
+}

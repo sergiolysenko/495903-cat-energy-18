@@ -1,0 +1,53 @@
+.item-program {
+  list-style: none;
+  background-color: $bg-grey;
+}
+.item-program__title {
+  position: relative;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #111111;
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $theme-green;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+}
+.item-program__title--slim::after {
+  background-image: url('../img/icon-cat-slim.svg');
+  top: -2px;
+  left: 7px;
+  width: 35px;
+  height: 49px;
+}
+.item-program__title--pro::after {
+  background-image: url('../img/icon-cat-pro.svg');
+  left: -10px;
+  top: 10px;
+  width: 67px;
+  height: 28px;
+}
+.item-program__description {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Arial;
+  color: #444444;
+}
+.item-program__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #111111;
+  text-decoration: none;
+}

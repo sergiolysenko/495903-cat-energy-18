@@ -1,0 +1,19 @@
+.green-button {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: $main-theme;
+  text-align: center;
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+  &:active {
+    color: #99c684;
+  }
+}
