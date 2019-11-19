@@ -1,6 +1,8 @@
-@import "scaffolding.scss";
-@import "variables.scss";
-@import "mixins.scss";
+@import "common/scaffolding.scss";
+@import "common/variables.scss";
+@import "common/mixins.scss";
+@import "common/fonts.scss";
+@import "common/visually-hidden.scss";
 @import "blocks/site-list.scss";
 @import "blocks/index-header.scss";
 @import "blocks/green-button.scss";
