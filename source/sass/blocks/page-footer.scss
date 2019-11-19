@@ -1,11 +1,13 @@
 .page-footer {
   background-color: $bg-grey;
 }
+
 .page-footer__logo--active:hover,
 .page-footer__logo--active:focus {
   opacity: 0.8;
   cursor: pointer;
 }
+
 .page-footer__logo--active:active {
   opacity: 0.6;
   cursor: pointer;

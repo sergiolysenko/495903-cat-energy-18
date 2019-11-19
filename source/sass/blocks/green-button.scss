@@ -9,10 +9,12 @@
   text-decoration: none;
   background-color: $main-theme;
   text-align: center;
+
   &:hover,
   &:focus {
     background-color: #5eaa2f;
   }
+
   &:active {
     color: #99c684;
   }

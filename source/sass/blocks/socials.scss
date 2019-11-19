@@ -1,24 +1,30 @@
 .socials__list {
   list-style: none;
 }
+
 .socials__link svg {
   fill: #666666;
+
   &:hover,
   &:focus {
     fill: $main-theme;
   }
+
   &:active {
-    opacity: 0.30;
+    opacity: 0.3;
   }
 }
+
 .socials__link--vk svg {
   width: 22px;
   height: 12px;
 }
+
 .socials__link--insta svg {
   width: 16px;
   height: 16px;
 }
+
 .socials__link--fb svg {
   width: 10px;
   height: 19px;
