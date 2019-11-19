@@ -29,7 +29,7 @@
 }
 
 .item-program__title--slim::after {
-  background-image: url('../img/icon-cat-slim.svg');
+  background-image: url("../img/icon-cat-slim.svg");
   top: -2px;
   left: 7px;
   width: 35px;
@@ -37,7 +37,7 @@
 }
 
 .item-program__title--pro::after {
-  background-image: url('../img/icon-cat-pro.svg');
+  background-image: url("../img/icon-cat-pro.svg");
   left: -10px;
   top: 10px;
   width: 67px;
@@ -47,7 +47,7 @@
 .item-program__description {
   font-size: 14px;
   line-height: 18px;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   color: #444444;
 }
 
