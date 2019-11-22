@@ -1,0 +1,17 @@
+.contacts {
+  background-color: #ffffff;
+}
+
+.contacts__welcome-cry {
+  font-family: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.contacts__addres {
+  @include font-arial;
+  line-height: 20px;
+  font-size: 14px;
+}

@@ -1,0 +1,34 @@
+.example {
+  background-color: $bg-grey;
+}
+
+.example__section-title {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+}
+
+.example__story {
+  @include font-arial;
+}
+
+.example__stats-value {
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.example__stats-title {
+  @include font-arial;
+  line-height: 12px;
+  font-size: 12px;
+}
+
+.example__price {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
