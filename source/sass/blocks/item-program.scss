@@ -47,8 +47,7 @@
 .item-program__description {
   font-size: 14px;
   line-height: 18px;
-  font-family: "Arial", sans-serif;
-  color: #444444;
+  @include font-arial;
 }
 
 .item-program__link {
