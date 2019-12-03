@@ -1,0 +1,18 @@
+.extra-item {
+  list-style: none;
+}
+
+.extra-item__title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.extra-item__volume,
+.extra-item__price {
+  @include font-arial;
+  font-size: 14px;
+  line-height: 14px;
+}
