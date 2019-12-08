@@ -1,6 +1,19 @@
+.show-more {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.show-more__wrapper {
+  width: 280px;
+  min-height: 208px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
 .show-more::before {
   content: "";
-  display: block;
+  position: absolute;
   width: 30px;
   height: 30px;
   background-image: url("../img/icon-plus-mobile.svg");
@@ -40,5 +53,23 @@
 
   &:active {
     color: #c3c3c3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    border: 1px solid #ededed;
+  }
+
+  .show-more__wrapper {
+    width: 324px;
+    min-height: 431px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more__wrapper {
+    width: 245px;
+    min-height: 431px;
   }
 }

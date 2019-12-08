@@ -1,0 +1,30 @@
+.main-products__list {
+  @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .main-products__list {
+    width: 708px;
+    margin: 21px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .main-products__item {
+    margin-top: 140px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-products__list {
+    width: 1220px;
+    margin-top: 16px;
+  }
+
+  .main-products__item {
+    margin-top: 142px;
+  }
+}

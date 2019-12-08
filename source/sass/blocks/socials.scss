@@ -1,5 +1,12 @@
 .socials__list {
-  list-style: none;
+  display: flex;
+  justify-content: center;
+
+  @include list-reset;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+  align-items: center;
+  min-height: 62px;
 }
 
 .socials__link svg {
@@ -28,4 +35,10 @@
 .socials__link--fb svg {
   width: 10px;
   height: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .socials__list {
+    border: none;
+  }
 }
