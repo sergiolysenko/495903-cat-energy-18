@@ -1,5 +1,11 @@
 .example {
   background-color: $bg-grey;
+  margin-top: 40px;
+}
+
+.example__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .example__section-title {
@@ -8,10 +14,24 @@
   line-height: 60px;
   color: $font-black;
   margin: 0;
+  padding-top: 19px;
 }
 
 .example__story {
   @include font-arial;
+  width: 270px;
+  padding: 22px 0;
+  margin: 0;
+}
+
+.example__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example__stats-table {
+  position: relative;
 }
 
 .example__stats-value {
@@ -19,12 +39,25 @@
   line-height: 24px;
   color: $font-black;
   text-transform: uppercase;
+  border: 1px solid $border-checkbox-grey;
+  border-radius: 3px;
+  width: 118px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .example__stats-title {
   @include font-arial;
   line-height: 12px;
   font-size: 12px;
+  font-weight: normal;
+  width: 82px;
+  display: block;
+  background-color: $bg-grey;
+  position: absolute;
+  top: 48px;
+  left: 20px;
 }
 
 .example__price {
@@ -32,4 +65,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $font-black;
+  margin: 31px auto;
+  text-align: center;
 }
+/* SLIDER BEFORE AFTER */
