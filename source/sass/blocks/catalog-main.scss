@@ -1,6 +1,26 @@
 .catalog-main__title {
   font-size: 36px;
   line-height: 60px;
-  color: #111111;
+  color: $font-black;
   font-weight: normal;
+  min-height: 103px;
+  box-sizing: border-box;
+  padding-top: 14px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-main__title {
+    width: 708px;
+    font-size: 60px;
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-main__title {
+    width: 1220px;
+    padding-top: 35px;
+  }
 }

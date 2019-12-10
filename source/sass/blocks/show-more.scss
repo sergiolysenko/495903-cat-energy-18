@@ -1,6 +1,19 @@
+.show-more {
+  border-top: 1px solid $border-product-light-grey;
+  border-bottom: 1px solid $border-product-light-grey;
+}
+
+.show-more__wrapper {
+  width: 280px;
+  min-height: 208px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
 .show-more::before {
   content: "";
-  display: block;
+  position: absolute;
   width: 30px;
   height: 30px;
   background-image: url("../img/icon-plus-mobile.svg");
@@ -11,7 +24,7 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $font-black;
   font-weight: normal;
 }
 
@@ -28,17 +41,35 @@
   text-transform: uppercase;
   padding-top: 13px;
   padding-bottom: 13px;
-  color: #444444;
+  color: $font-grey;
   text-decoration: none;
   background-color: $bg-grey;
   text-align: center;
 
   &:hover,
   &:focus {
-    background-color: #ebebeb;
+    background-color: $border-product-light-grey;
   }
 
   &:active {
-    color: #c3c3c3;
+    color: $font-active-grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    border: 1px solid $border-product-light-grey;
+  }
+
+  .show-more__wrapper {
+    width: 324px;
+    min-height: 431px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more__wrapper {
+    width: 245px;
+    min-height: 431px;
   }
 }

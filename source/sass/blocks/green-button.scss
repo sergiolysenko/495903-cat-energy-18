@@ -1,21 +1,23 @@
 .green-button {
   display: block;
+  box-sizing: border-box;
+  min-height: 40px;
+  padding: 10px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  color: #ffffff;
+
+  color: $white;
   text-decoration: none;
   background-color: $main-theme;
   text-align: center;
 
   &:hover,
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $dark-green;
   }
 
   &:active {
-    color: #99c684;
+    color: $light-green;
   }
 }

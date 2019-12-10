@@ -2,3 +2,13 @@
   font-family: "Arial", "Tahoma", sans-serif;
   color: $font-grey;
 }
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin border {
+  border: 1px solid red;
+}

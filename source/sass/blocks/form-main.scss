@@ -2,14 +2,14 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
-  color: #111111;
+  color: $font-black;
 }
 
 .form-main__instruction {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #111111;
+  color: $font-black;
 }
 
 .form-main__field {
@@ -20,7 +20,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #222222;
+  color: $font-dark-grey;
 }
 
 .form-main__input {
@@ -28,18 +28,18 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: $font-grey;
   box-sizing: border-box;
   background-color: transparent;
-  border: 1px solid #e6e6e6;
+  border: 1px solid $border-grey;
   padding: 15px;
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $border-dark-grey;
   }
 
   &:focus {
-    outline: 2px solid #444444;
+    outline: 2px solid $font-grey;
   }
 }
 
@@ -55,14 +55,14 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    border: 1px solid #d1d1d1;
+    border: 1px solid $border-radio-grey;
     border-radius: 50%;
     top: -5px;
     left: -40px;
   }
 
   &:hover::before {
-    border: 1px solid #bcbcbc;
+    border: 1px solid $border-radio-dark-grey;
   }
 
   &:active,
@@ -90,25 +90,25 @@
 .form-main__section-title {
   font-size: 24px;
   line-height: 24px;
-  color: #111111;
+  color: $font-black;
 }
 
 .form-main__text-area {
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $font-grey;
   text-transform: uppercase;
   padding: 15px;
   width: 280px;
   resize: none;
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $border-dark-grey;
   }
 
   &:focus {
-    outline: 2px solid #444444;
+    outline: 2px solid $font-grey;
   }
 }
 
@@ -128,13 +128,13 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    border: 1px solid #cfcfcf;
+    border: 1px solid $border-checkbox-grey;
     top: -5px;
     left: -40px;
   }
 
   &:hover::before {
-    border: 1px solid #bababa;
+    border: 1px solid $border-checkbox-dark-grey;
   }
 
   &:active,
