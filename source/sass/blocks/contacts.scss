@@ -1,12 +1,12 @@
 .contacts {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .contacts__welcome-cry {
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
-  color: #111111;
+  color: $font-black;
   text-transform: uppercase;
 }
 

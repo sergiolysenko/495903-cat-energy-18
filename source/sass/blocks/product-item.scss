@@ -1,5 +1,5 @@
 .product-item {
-  border-top: 1px solid #ededed;
+  border-top: 1px solid $border-product-light-grey;
 }
 
 .product-item__wrapper {
@@ -18,7 +18,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $font-black;
   text-transform: uppercase;
   width: 75px;
 }
@@ -38,7 +38,7 @@
     width: 324px;
     min-height: 431px;
     border: none;
-    background-color: #f2f2f2;
+    background-color: $bg-grey;
   }
 }
 

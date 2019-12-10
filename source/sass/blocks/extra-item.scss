@@ -1,9 +1,9 @@
 .extra-item {
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $border-dark-grey;
 }
 
 .extra-item:last-child {
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $border-dark-grey;
 }
 
 .extra-item__wrapper {
@@ -15,7 +15,7 @@
   line-height: 16px;
   font-weight: normal;
   text-transform: uppercase;
-  color: #111111;
+  color: $font-black;
 }
 
 .extra-item__volume,
@@ -27,12 +27,12 @@
 
 @media (min-width: $tablet-width) {
   .extra-item {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $border-dark-grey;
     border-bottom: none;
   }
 
   .extra-item:last-child {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $border-dark-grey;
   }
 
   .extra-item__wrapper {
@@ -45,11 +45,11 @@
 @media (min-width: $desktop-width) {
   .extra-item {
     border: none;
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid $border-dark-grey;
   }
 
   .extra-item:last-child {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $border-dark-grey;
   }
 
   .extra-item__wrapper {

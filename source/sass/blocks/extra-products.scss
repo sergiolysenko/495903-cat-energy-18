@@ -7,7 +7,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
-  color: #111111;
+  color: $font-black;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 33px;
@@ -36,7 +36,7 @@
     font-size: 36px;
     line-height: 36px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: $white;
     top: -115px;
     left: 0;
     padding: 0 36px;
