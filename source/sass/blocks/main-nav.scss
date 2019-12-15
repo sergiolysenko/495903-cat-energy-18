@@ -10,8 +10,8 @@
   position: absolute;
   width: 18px;
   height: 18px;
-  right: 12%;
-  top: -45px;
+  right: 24%;
+  top: -42px;
 }
 
 .main-nav--closed .main-nav__toggle {
@@ -57,24 +57,24 @@
   &:active {
     opacity: 0.3;
   }
+}
 
-  &--active {
-    padding-bottom: 22px;
-    padding-top: 25px;
-    text-align: center;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
+.main-nav__link-active {
+  padding-bottom: 22px;
+  padding-top: 25px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 10px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: $main-theme;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $main-theme;
   }
 }
 
@@ -136,9 +136,9 @@
 
   .page-header--index-desktop .main-nav__link {
     color: $white;
+  }
 
-    &--active::after {
-      background-color: $white;
-    }
+  .page-header--index-desktop .main-nav__link-active::after {
+    background-color: $white;
   }
 }

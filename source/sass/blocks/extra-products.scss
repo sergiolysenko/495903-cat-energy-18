@@ -19,6 +19,7 @@
 
 .extra-products__gift {
   margin-top: 40px;
+  margin-bottom: 34px;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,12 +49,14 @@
 
   .extra-products__gift {
     margin-top: 69px;
+    margin-bottom: 79px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .extra-products {
-    margin-top: 95px;
+    margin-top: 97px;
+    margin-bottom: 85px;
   }
 
   .extra-products__wrapper {
@@ -73,5 +76,6 @@
 
   .extra-products__gift {
     margin-top: 90px;
+    margin-bottom: 0;
   }
 }

@@ -65,7 +65,147 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $font-black;
-  margin: 31px auto;
+  margin: 32px auto;
   text-align: center;
 }
+
 /* SLIDER BEFORE AFTER */
+.example__cat-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.example__cat-image--after {
+  display: none;
+}
+
+.example__toggles {
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: $white;
+    margin-top: 26px;
+  }
+
+  .example__wrapper {
+    width: 708px;
+  }
+
+  .example__section-title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 19px;
+  }
+
+  .example__story {
+    width: 700px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 65px;
+    padding-bottom: 49px;
+  }
+
+  .example__stats {
+    justify-content: flex-end;
+  }
+
+  .example__stats-table {
+    margin-right: 36px;
+  }
+
+  .example__stats-value {
+    font-size: 30px;
+    line-height: 37px;
+    width: 157px;
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  .example__stats-title {
+    line-height: 14px;
+    font-size: 14px;
+    background-color: $white;
+    width: auto;
+    top: 65px;
+
+    &--weight {
+      left: 32px;
+    }
+
+    &--time {
+      left: 20px;
+    }
+  }
+
+  .example__price {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+    margin-left: auto;
+    padding: 11px 0;
+    width: 192px;
+    text-align: right;
+  }
+
+  .example__before-after {
+    background-color: $bg-grey;
+    min-height: 713px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    background-color: $white;
+    margin-top: 0;
+    position: relative;
+  }
+
+  .example__wrapper {
+    width: 1220px;
+  }
+
+  .example__section-title {
+    padding-top: 58px;
+  }
+
+  .example__story {
+    width: 437px;
+    padding-top: 148px;
+    padding-bottom: 65px;
+  }
+
+  .example__stats {
+    width: 368px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .example__stats-table {
+    margin-right: 0;
+  }
+
+  .example__price {
+    margin: 0;
+    padding: 50px 0 70px 0;
+    width: auto;
+    text-align: left;
+  }
+
+  .example__price-numbers {
+    padding-left: 58px;
+  }
+
+  .example__before-after {
+    min-height: auto;
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    right: 0;
+  }
+}
