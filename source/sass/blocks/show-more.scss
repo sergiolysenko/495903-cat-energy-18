@@ -4,20 +4,12 @@
 }
 
 .show-more__wrapper {
+  padding-top: 79px;
+  padding-bottom: 22px;
   width: 280px;
-  min-height: 208px;
   margin: 0 auto;
-
   text-align: center;
-}
-
-.show-more::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-image: url("../img/icon-plus-mobile.svg");
-  opacity: 0.2;
+  position: relative;
 }
 
 .show-more__title {
@@ -26,21 +18,34 @@
   line-height: 20px;
   color: $font-black;
   font-weight: normal;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-plus-mobile.svg");
+    opacity: 0.2;
+    top: 25px;
+    left: 125px;
+  }
 }
 
 .show-more__note {
   @include font-arial;
   font-size: 12px;
   line-height: 16px;
+  margin-top: 9px;
+  margin-bottom: 20px;
 }
 
 .show-more__button {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 11px;
+  padding-bottom: 12px;
   color: $font-grey;
   text-decoration: none;
   background-color: $bg-grey;
@@ -64,12 +69,63 @@
   .show-more__wrapper {
     width: 324px;
     min-height: 431px;
+    padding-top: 165px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .show-more__title {
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    width: 140px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      top: 55px;
+      left: 133px;
+    }
+  }
+
+  .show-more__note {
+    font-size: 16px;
+    margin: 27px auto;
+    display: block;
+    width: 170px;
+  }
+
+  .show-more__button {
+    margin: 87px auto 0 auto;
+    padding-bottom: 10px;
+    padding-top: 13px;
+    width: 249px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .show-more__wrapper {
     width: 245px;
-    min-height: 431px;
+    padding-top: 164px;
+    padding-bottom: 0;
+  }
+
+  .show-more__title {
+    &::before {
+      top: 54px;
+      left: 93px;
+    }
+  }
+
+  .show-more__note {
+    margin-top: 24px;
+    line-height: 20px;
+  }
+
+  .show-more__button {
+    padding-top: 13px;
+    padding-bottom: 10px;
+    margin: 82px auto 10px auto;
+    width: 169px;
   }
 }

@@ -14,13 +14,13 @@
   line-height: 60px;
   color: $font-black;
   margin: 0;
-  padding-top: 19px;
+  padding-top: 18px;
 }
 
 .example__story {
   @include font-arial;
   width: 270px;
-  padding: 22px 0;
+  padding: 24px 0;
   margin: 0;
 }
 
@@ -73,17 +73,70 @@
 .example__cat-image {
   display: block;
   margin: 0 auto;
+
+  &--after {
+    width: 320px;
+    height: 240px;
+  }
 }
 
-.example__cat-image--after {
+.example__hide {
   display: none;
 }
 
 .example__toggles {
-  width: 200px;
+  width: 210px;
   margin: 0 auto;
-  padding-top: 32px;
+  padding-top: 30px;
   padding-bottom: 33px;
+  padding-left: 2px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 82px;
+    height: 12px;
+    border: 1px solid $border-dark-grey;
+    border-radius: 20px;
+    top: 34px;
+    left: 64px;
+  }
+}
+
+.example__toggle {
+  font-size: 16px;
+  line-height: 20px;
+  color: $font-black;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  position: relative;
+
+  &--before::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    background-color: $main-theme;
+    border-radius: 20px;
+    top: 8px;
+    left: 68px;
+  }
+
+  &--after::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    background-color: $main-theme;
+    border-radius: 20px;
+    top: 8px;
+    left: -50px;
+  }
 }
 
 @media (min-width: $tablet-width) {

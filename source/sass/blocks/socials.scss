@@ -11,7 +11,9 @@
 
   @include list-reset;
   align-items: center;
-  min-height: 62px;
+  min-height: 57px;
+  padding-top: 5px;
+  padding-right: 7px;
 }
 
 .socials__link {
@@ -44,6 +46,7 @@
   &--fb svg {
     width: 10px;
     height: 19px;
+    margin-left: 5px;
   }
 }
 
@@ -56,6 +59,8 @@
     width: 128px;
     margin: 0 auto;
     padding-left: 12px;
+    padding-top: 0;
+    padding-right: 0;
   }
 
   .socials__link {
@@ -77,6 +82,7 @@
     &--fb svg {
       width: 14px;
       height: 28px;
+      margin: 0;
     }
   }
 }

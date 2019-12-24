@@ -10,6 +10,11 @@
   margin: 0 auto;
 }
 
+.product-item__image {
+  flex-shrink: 0;
+  height: 144px;
+}
+
 .product-item__description {
   width: 140px;
 }
@@ -21,24 +26,87 @@
   color: $font-black;
   text-transform: uppercase;
   width: 75px;
+  margin: 22px 0 11px 0;
 }
 
 .product-item__info-list {
   @include font-arial;
   font-size: 12px;
   line-height: 16px;
+  width: 140px;
+  border-collapse: collapse;
+}
+
+.product-item__info-legend {
+  padding: 0;
+}
+
+.product-item__info-value {
+  text-align: right;
+  padding: 0;
 }
 
 .product-item__buy-button {
   width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
   .product-item {
+    box-sizing: border-box;
     width: 324px;
     min-height: 431px;
+    padding-top: 140px;
     border: none;
     background-color: $bg-grey;
+  }
+
+  .product-item__wrapper {
+    flex-wrap: no-wrap;
+    width: 250px;
+    min-height: auto;
+    position: relative;
+  }
+
+  .product-item__image {
+    position: absolute;
+    top: -190px;
+    left: 50px;
+  }
+
+  .product-item__description {
+    width: auto;
+  }
+
+  .product-item__title {
+    font-size: 20px;
+    width: 140px;
+    padding-left: 56px;
+    margin: 23px 0 11px 0;
+    text-align: center;
+  }
+
+  .product-item__info-list {
+    font-size: 16px;
+    width: 250px;
+    margin-top: 19px;
+    margin-bottom: 35px;
+  }
+
+  .product-item__info-row {
+    border-bottom: 1px solid $border-dark-grey;
+  }
+
+  .product-item__info-legend,
+  .product-item__info-value {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .product-item__buy-button {
+    margin-bottom: 10px;
   }
 }
 
@@ -46,9 +114,43 @@
   .product-item {
     width: 245px;
     min-height: 431px;
+    padding-top: 141px;
   }
 
   .product-item__buy-button {
     width: 169px;
+    margin: 0 auto;
+  }
+
+
+  .product-item__wrapper {
+    width: 245px;
+    min-height: auto;
+    position: relative;
+    justify-content: center;
+  }
+
+  .product-item__image {
+    // top: -190px;
+    // left: 50px;
+  }
+
+  .product-item__title {
+    padding-left: 15px;
+  }
+
+  .product-item__info-list {
+    width: 170px;
+    margin: 19px auto 31px auto;
+  }
+
+  .product-item__info-row {
+    border-bottom: 1px solid $border-dark-grey;
+  }
+
+  .product-item__info-legend,
+  .product-item__info-value {
+    padding-top: 8px;
+    padding-bottom: 7px;
   }
 }
