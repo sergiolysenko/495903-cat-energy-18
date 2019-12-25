@@ -10,7 +10,7 @@
   position: absolute;
   width: 18px;
   height: 18px;
-  right: 24%;
+  right: 7%;
   top: -42px;
 }
 
@@ -70,7 +70,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 10px;
+    bottom: 13px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -129,16 +129,16 @@
     font-size: 20px;
   }
 
-  .page-header--index-desktop .main-nav__list {
+  .index-page .main-nav__list {
     font-size: 20px;
     color: $white;
   }
 
-  .page-header--index-desktop .main-nav__link {
+  .index-page .main-nav__link {
     color: $white;
   }
 
-  .page-header--index-desktop .main-nav__link-active::after {
+  .index-page .main-nav__link-active::after {
     background-color: $white;
   }
 }

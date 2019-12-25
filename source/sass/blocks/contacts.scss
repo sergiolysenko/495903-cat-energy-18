@@ -24,7 +24,7 @@
   flex-shrink: 0;
 }
 
-.contacts__addres {
+.contacts__address {
   @include font-arial;
   line-height: 20px;
   font-size: 14px;
@@ -36,7 +36,7 @@
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     width: 630px;
-    padding: 60px 0 55px 0;
+    padding: 61px 0 55px 0;
   }
 
   .contacts__welcome-cry {
@@ -47,10 +47,11 @@
     flex-shrink: 0;
   }
 
-  .contacts__addres {
+  .contacts__address {
     font-size: 16px;
     width: 160px;
     text-align: right;
+    padding: 2px;
   }
 
   .contacts__sp {
