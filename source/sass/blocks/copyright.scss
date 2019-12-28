@@ -1,10 +1,5 @@
 .copyright {
   margin: 0 auto;
-  min-height: 78px;
-  width: 280px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .copyright__link {
@@ -12,8 +7,13 @@
   text-decoration: none;
   font-size: 16px;
   line-height: 16px;
+  min-height: 78px;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  &:hover + .copyright__link--svg {
+  &:hover .copyright__svg {
     fill: $main-theme;
   }
 
@@ -40,7 +40,9 @@
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;
-    min-height: auto;
+  }
+
+  .copyright__link {
     width: 162px;
   }
 }

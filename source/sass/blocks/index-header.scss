@@ -1,14 +1,18 @@
 .index-header {
-  width: 320px;
+  max-width: 450px;
   margin: 0 auto;
   background-image: url("../img/index-background-mobile@1x.jpg");
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-size: 320px 305px;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 100% auto;
+  }
 }
 
 .index-header__wrapper {
   width: 280px;
-  min-height: 480px;
   margin: 0 auto;
 }
 
@@ -32,20 +36,20 @@
 }
 
 .index-header__image {
-  margin-top: 14px;
+  display: block;
+  margin: 27px auto 4px auto;
 }
 
 @media (min-width: $tablet-width) {
   .index-header {
     background: none;
     width: auto;
+    max-width: 100%;
+    position: relative;
   }
 
   .index-header__wrapper {
     width: 528px;
-    min-height: 828px;
-    margin-top: 24px;
-    position: relative;
   }
 
   .index-header__title {
@@ -53,6 +57,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    padding-top: 50px;
   }
 
   .index-header__slogan {
@@ -64,14 +69,17 @@
   }
 
   .index-header__image {
+    margin-top: 0;
+    margin-bottom: 2px;
     width: 709px;
-    height: 590px;
+    height: 609px;
   }
 
   .index-header__wrapper .index-header__choose-button {
     position: absolute;
-    top: 255px;
-    left: 0;
+    top: 280px;
+    left: 50%;
+    margin-left: -264px;
     font-size: 20px;
     line-height: 20px;
     padding: 16px;
@@ -82,19 +90,27 @@
 @media (min-width: $desktop-width) {
   .index-header {
     min-height: 696px;
-    max-width: 1440px;
-    background-image: url("../img/index-background-desktop@1x.jpg");
+    max-width: 100%;
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient($main-theme 0%, $main-theme 100%);
     background-repeat: no-repeat;
     background-position: 100%;
-    background-size: 720px 696px;
-    border: 00.1px solid transparent;
+    background-size: 50vw 100%;
+    border: 0.1px solid transparent;
+    z-index: 0;
+
+    @media (min-width: 1440px) {
+      background-size: 50vw auto;
+    }
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .index-header__wrapper {
     width: 1060px;
     min-height: auto;
     margin: 0 auto;
-    margin-top: 136px;
   }
 
   .index-header__title {
@@ -103,7 +119,7 @@
     font-size: 60px;
     line-height: 60px;
     width: 420px;
-    margin: 0;
+    margin-top: 136px;
     padding-top: 86px;
     text-align: left;
   }
@@ -120,13 +136,13 @@
     width: 552px;
     height: 499px;
     position: absolute;
-    top: 0;
-    right: 110px;
+    top: 143px;
+    left: 50%;
+    margin-left: -160px;
   }
 
   .index-header__wrapper .index-header__choose-button {
     position: static;
-    margin-top: 54px;
-    margin-bottom: 50px;
+    margin: 54px 0 50px 0;
   }
 }

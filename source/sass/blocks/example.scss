@@ -43,8 +43,8 @@
   border-radius: 3px;
   width: 118px;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 17px;
 }
 
 .example__stats-title {
@@ -65,7 +65,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $font-black;
-  margin: 32px auto;
+  margin: 30px auto 33px auto;
   text-align: center;
 }
 
@@ -178,7 +178,7 @@
     line-height: 37px;
     width: 157px;
     text-align: center;
-    padding-top: 17px;
+    padding-top: 15px;
     padding-bottom: 17px;
   }
 
@@ -187,14 +187,15 @@
     font-size: 14px;
     background-color: $white;
     width: auto;
+    padding: 0 8px 0 8px;
     top: 65px;
 
     &--weight {
-      left: 32px;
+      left: 24px;
     }
 
     &--time {
-      left: 20px;
+      left: 12px;
     }
   }
 
@@ -213,7 +214,7 @@
   }
 
   .example__cat-image {
-    margin: 70px auto 30px auto;
+    margin: 80px auto 20px auto;
     width: 677px;
     height: 517px;
   }
@@ -221,10 +222,11 @@
   .example__toggle-round {
     width: 428px;
     height: 6px;
+    position: relative;
     background-color: $border-dark-grey;
     border-radius: 20px;
     top: 9px;
-    left: 68px;
+    left: 0;
 
     &::before {
       content: "";
@@ -258,6 +260,7 @@
 
     &:active::after {
       border: 1px solid $main-theme;
+      box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.3);
     }
   }
 
@@ -296,7 +299,7 @@
   .example {
     background-color: $white;
     background-image: linear-gradient(180deg, $white 0%, $white 29%, rgba(234, 234, 234, 0) 29%, rgba(234, 234, 234, 0) 100%),
-      linear-gradient(90deg, $bg-grey 0%, $bg-grey 70%, $example-bg 70%, $example-bg 100%);
+      linear-gradient(90deg, $bg-grey 0%, $bg-grey 72.5%, $example-bg 72.5%, $example-bg 100%);
     margin-top: 0;
     position: relative;
   }
@@ -321,6 +324,10 @@
     justify-content: space-between;
   }
 
+  .example__stats-title {
+    background-color: $bg-grey;
+  }
+
   .example__stats-table {
     margin-right: 0;
   }
@@ -340,7 +347,16 @@
     min-height: auto;
     position: absolute;
     background-color: transparent;
-    top: -58px;
-    left: 708px;
+    top: -66px;
+    left: 50%;
+    margin-left: -36px;
+  }
+
+  .example__cat-image {
+    margin: 70px auto 35px auto;
+  }
+
+  .example__toggles {
+    padding: 4px 0 10px 42px;
   }
 }
