@@ -37,9 +37,9 @@
     margin: 0;
   }
 
-  .page-header__logo {
-    width: 240px;
-    height: 100px;
+  .page-header__image-logo {
+    width: 173px;
+    height: 63px;
   }
 
   .page-header__nav {
@@ -55,11 +55,21 @@
     margin-top: 47px;
   }
 
+  .page-header__logo-container {
+    padding-top: 9px;
+  }
+
+  .page-header__image-logo {
+    width: 202px;
+    height: 59px;
+  }
+
   .index-page .page-header__wrapper {
     position: absolute;
     top: 0;
     left: 50%;
     margin-left: -610px;
+    z-index: 1;
   }
 
   .page-header__nav {

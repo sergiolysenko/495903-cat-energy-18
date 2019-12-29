@@ -12,17 +12,18 @@
 }
 
 .page-footer__logo {
+  margin-top: 5px;
   min-height: 85px;
   width: 130px;
   align-self: center;
 
-  &--active:hover,
-  &--active:focus {
+  &:hover,
+  &:focus {
     opacity: 0.8;
     cursor: pointer;
   }
 
-  &--active:active {
+  &:active {
     opacity: 0.6;
     cursor: pointer;
   }
@@ -33,11 +34,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
-    width: 768px;
-    margin: 0 auto;
-  }
-
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -64,5 +60,6 @@
     position: absolute;
     top: 95px;
     left: 110px;
+    z-index: 2;
   }
 }

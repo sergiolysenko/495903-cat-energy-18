@@ -64,6 +64,32 @@
   &:focus {
     outline: 2px solid $font-grey;
   }
+
+  &--invalid {
+    outline: 2px solid $error-red;
+  }
+}
+
+.form-main__svg {
+  position: absolute;
+
+  &--email {
+    width: 17px;
+    height: 13px;
+    top: 17px;
+    right: 16px;
+  }
+
+  &--tel {
+    width: 20px;
+    height: 20px;
+    bottom: 14px;
+    right: 13px;
+  }
+}
+
+.form-main__input:focus ~ .form-main__svg {
+  fill: $main-theme;
 }
 
 .form-main__field-cat {
