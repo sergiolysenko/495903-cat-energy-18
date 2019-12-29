@@ -561,4 +561,16 @@
     padding-top: 10px;
     font-size: 16px;
   }
+
+  .form-main__svg {
+    &--email {
+      top: 38px;
+      left: 533px;
+    }
+
+    &--tel {
+      bottom: 22px;
+      right: 20px;
+    }
+  }
 }

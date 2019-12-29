@@ -8,6 +8,7 @@ function initMap() {
           url: "../img/map-pin.png",
           scaledSize: new google.maps.Size(65, 54)
         }
+
         marker = new google.maps.Marker({
             position: {lat: 59.938734, lng: 30.323069},
             map: map,
