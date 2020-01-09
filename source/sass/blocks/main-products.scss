@@ -1,5 +1,7 @@
 .main-products__list {
+  width: 280px;
   @include list-reset;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
